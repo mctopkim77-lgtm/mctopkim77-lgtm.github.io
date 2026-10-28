@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>스트랩 패턴 — Atelier Line</title>
+<script>document.documentElement.classList.add('js');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;700&display=swap">
+<link rel="stylesheet" href="assets/detail.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="3" stitchTiles="stitch"></feTurbulence>
+      <feColorMatrix type="saturate" values="0"></feColorMatrix>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 .55"></feFuncA></feComponentTransfer>
+    </filter>
+    <marker id="tick" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M5 0 V10" stroke="currentColor" stroke-width="1.4"></path>
+    </marker>
+    <symbol id="check" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8.5" fill="none" stroke="currentColor" stroke-width="1.5"></circle><path d="M6.5 10.2l2.4 2.4 4.6-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></symbol>
+  </defs>
+</svg>
+
+<nav class="global">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="14" height="14" rx="3.5"></rect><path d="M6.5 10h7" stroke-dasharray="1.6 1.6"></path></svg>
+      Atelier Line
+    </a>
+    <div class="navlinks">
+      <a href="wallet.html">지갑</a>
+      <a href="strap.html" aria-current="page">스트랩</a>
+      <a href="cover.html">커버</a>
+      <a href="blog/">블로그</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+<section class="cat-hero">
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">패턴</a><span>›</span>스트랩</div>
+    <div class="eyebrow reveal">Strap</div>
+    <h1 class="reveal d1">스트랩 패턴</h1>
+    <p class="sub reveal d2">워치 스트랩과 더블 투어 스트랩, 매일 차는 가죽 벨트까지. 착용 구멍과 버클 홈까지 도안에 모두 표시되어 있습니다.</p>
+  </div>
+</section>
+
+<section class="cat-list">
+  <div class="wrap">
+    <div class="cat-grid">
+    <a class="pcard reveal" href="shoulder-bag.html">
+      <div class="visual v2" data-img="shoulder-bag"><svg viewBox="0 0 300 225" fill="none"><g stroke="#c98a52" stroke-width="1.3"><path d="M120 40 H146 V170 L133 186 L120 170 Z"></path><path d="M160 40 H186 V130 H160 Z"></path></g></svg><img class="photo" src="assets/uploads/watch-strap-1600.jpg" alt="워치 스트랩"></div>
+      <div class="pbody">
+        <p class="plevel">중급 · 커스텀 추천</p>
+        <h3 data-edit="shoulder-bag.name">워치 스트랩</h3>
+        <p class="ptag" data-edit="shoulder-bag.tagline">시계가 있으세요? 직접 만든 스트랩으로 분위기를 바꿔 보세요.</p>
+        <p class="pprice" data-edit="shoulder-bag.price">₩15,000부터 · 즉시 다운로드 · PDF</p>
+        <span class="plink">자세히 보기</span>
+      </div>
+    </a>
+    <a class="pcard reveal d1" href="double-strap.html">
+      <div class="visual v1" data-img="double-strap"><svg class="rel-illus" viewBox="0 0 300 225" fill="none" aria-label="두 번 감는 더블 투어 스트랩 일러스트"><ellipse cx="150" cy="128" rx="108" ry="64" stroke="#6b4325" stroke-width="17"></ellipse><ellipse cx="150" cy="128" rx="114" ry="70" stroke="#f3e2cf" stroke-width=".9" stroke-dasharray="2.2 3" opacity=".75"></ellipse><ellipse cx="150" cy="128" rx="102" ry="58" stroke="#f3e2cf" stroke-width=".9" stroke-dasharray="2.2 3" opacity=".75"></ellipse><ellipse cx="150" cy="136" rx="86" ry="46" stroke="#8a5a34" stroke-width="17"></ellipse><ellipse cx="150" cy="136" rx="92" ry="52" stroke="#f3e2cf" stroke-width=".9" stroke-dasharray="2.2 3" opacity=".75"></ellipse><ellipse cx="150" cy="136" rx="80" ry="40" stroke="#f3e2cf" stroke-width=".9" stroke-dasharray="2.2 3" opacity=".75"></ellipse><rect x="226" y="150" width="20" height="14" rx="3" stroke="#d8d8dc" stroke-width="2.4" transform="rotate(-28 236 157)"></rect><rect x="118" y="38" width="64" height="72" rx="16" fill="#1f1b17"></rect><rect x="126" y="46" width="48" height="56" rx="11" fill="#2c2c2e"></rect><path d="M150 58 V74 L160 80" stroke="#c98a52" stroke-width="2.2" stroke-linecap="round"></path><rect x="182" y="66" width="5" height="12" rx="2" fill="#1f1b17"></rect></svg></div>
+      <div class="pbody">
+        <p class="plevel">중급 · 스타일 추천 · NEW</p>
+        <h3 data-edit="double-strap.name">더블 투어 스트랩</h3>
+        <p class="ptag" data-edit="double-strap.tagline">손목을 두 바퀴 감아 차는 스트랩. 긴 부품도 A4 정렬 표시만 맞추면 한 장처럼 이어집니다.</p>
+        <p class="pprice" data-edit="double-strap.price">₩18,000부터 · 즉시 다운로드 · PDF</p>
+        <span class="plink">자세히 보기</span>
+      </div>
+    </a>
+    <a class="pcard reveal d2" href="belt.html">
+      <div class="visual v1" data-img="belt"><svg class="rel-illus" viewBox="0 0 300 225" fill="none" aria-label="가죽 벨트 일러스트"><g transform="rotate(-10 150 112)"><path d="M44 96 H254 L274 112 L254 128 H44 Z" fill="#6b4325"></path><path d="M48 101 H252 L266 112 L252 123 H48" stroke="#f3e2cf" stroke-width=".9" stroke-dasharray="2.2 3" opacity=".75"></path><circle cx="196" cy="112" r="2.6" fill="#2a1a0e"></circle><circle cx="206" cy="112" r="2.6" fill="#2a1a0e"></circle><circle cx="216" cy="112" r="2.6" fill="#2a1a0e"></circle><circle cx="226" cy="112" r="2.6" fill="#2a1a0e"></circle><circle cx="236" cy="112" r="2.6" fill="#2a1a0e"></circle><rect x="88" y="90" width="15" height="44" rx="2" fill="#5a3820"></rect><rect x="14" y="86" width="30" height="52" rx="6" stroke="#d8d8dc" stroke-width="5"></rect><path d="M29 112 H60" stroke="#d8d8dc" stroke-width="4" stroke-linecap="round"></path></g></svg></div>
+      <div class="pbody">
+        <p class="plevel">입문 · 실용 추천 · NEW</p>
+        <h3 data-edit="belt.name">클래식 가죽 벨트</h3>
+        <p class="ptag" data-edit="belt.tagline">몸통은 길이표대로 자로 자르고, 끝 모양과 버클 쪽, 구멍 간격만 도안대로. 처음이어도 반듯한 벨트가 나옵니다.</p>
+        <p class="pprice" data-edit="belt.price">₩15,000부터 · 즉시 다운로드 · PDF</p>
+        <span class="plink">자세히 보기</span>
+      </div>
+    </a>
+    </div>
+  </div>
+</section>
+
+<section class="section soft">
+  <div class="wrap">
+    <h2 class="reveal">어떤 스트랩을 만들까요?</h2>
+    <p class="lead reveal d1">시계에는 워치 스트랩이나 더블 투어 스트랩, 처음 도전한다면 스티치가 적은 가죽 벨트부터 시작해 보세요.</p>
+    <div class="parts-wrap reveal">
+      <table class="parts compare">
+        <thead><tr><th>패턴</th><th>난이도</th><th>착용</th><th>제작 시간</th><th>가격</th></tr></thead>
+        <tbody>
+          <tr><td><a href="shoulder-bag.html">워치 스트랩</a></td><td>중급</td><td>손목 한 바퀴</td><td>약 4시간</td><td class="num">₩15,000부터</td></tr>
+          <tr><td><a href="double-strap.html">더블 투어 스트랩</a></td><td>중급</td><td>손목 두 바퀴</td><td>약 5시간</td><td class="num">₩18,000부터</td></tr>
+          <tr><td><a href="belt.html">클래식 가죽 벨트</a></td><td>입문</td><td>허리</td><td>약 3시간</td><td class="num">₩15,000부터</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="fnote">패턴 파일은 개인 및 소규모 상업적 제작 용도로 사용할 수 있습니다. 재배포는 금지됩니다.</div>
+    <div class="fcols">
+      <div class="fcol"><h4>지갑</h4><a href="wallet.html">지갑 전체</a><a href="cardholder.html">미니멀 카드홀더</a><a href="long-wallet.html">클래식 반지갑</a><a href="flap-wallet.html">커버 지갑</a></div>
+      <div class="fcol"><h4>스트랩</h4><a href="strap.html">스트랩 전체</a><a href="shoulder-bag.html">워치 스트랩</a><a href="double-strap.html">더블 투어 스트랩</a><a href="belt.html">클래식 가죽 벨트</a></div>
+      <div class="fcol"><h4>커버</h4><a href="cover.html">커버 전체</a><a href="passport.html">여권 케이스</a><a href="notebook.html">노트 케이스</a></div>
+      <div class="fcol"><h4>읽을거리</h4><a href="blog/">블로그</a></div>
+      <div class="fcol"><h4>고객지원</h4><a href="#">파일 사용 안내</a><a href="#">환불 정책</a><a href="#" data-contact="inquiry">문의하기</a></div>
+      <div class="fcol"><h4>Atelier Line</h4><a href="#">소개</a><a href="#" data-contact="instagram">인스타그램</a></div>
+    </div>
+    <div class="fbottom"><span>© 2026 Atelier Line.</span><span>대한민국</span></div>
+  </div>
+</footer>
+
+<div class="toast" role="status" aria-live="polite"></div>
+<script src="assets/detail.js"></script>
+
+
+
+
+
+
+<script src="assets/contact.js"></script>
+</body></html>

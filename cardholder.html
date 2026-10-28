@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ko"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>미니멀 카드홀더 — Atelier Line</title>
+<script>document.documentElement.classList.add('js');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;700&display=swap">
+<link rel="stylesheet" href="assets/detail.css">
+<link rel="stylesheet" href="assets/product.css">
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <filter id="grain" x="0" y="0" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="3" stitchTiles="stitch"></feTurbulence>
+      <feColorMatrix type="saturate" values="0"></feColorMatrix>
+      <feComponentTransfer><feFuncA type="table" tableValues="0 .55"></feFuncA></feComponentTransfer>
+    </filter>
+    <marker id="tick" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M5 0 V10" stroke="currentColor" stroke-width="1.4"></path>
+    </marker>
+    <symbol id="check" viewBox="0 0 20 20"><circle cx="10" cy="10" r="8.5" fill="none" stroke="currentColor" stroke-width="1.5"></circle><path d="M6.5 10.2l2.4 2.4 4.6-5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></symbol>
+  </defs>
+</svg>
+
+<nav class="global">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="14" height="14" rx="3.5"></rect><path d="M6.5 10h7" stroke-dasharray="1.6 1.6"></path></svg>
+      Atelier Line
+    </a>
+    <div class="navlinks">
+      <a href="wallet.html" aria-current="page">지갑</a>
+      <a href="strap.html">스트랩</a>
+      <a href="cover.html">커버</a>
+      <a href="blog/">블로그</a>
+    </div>
+  </div>
+</nav>
+
+<div class="subnav">
+  <div class="wrap">
+    <div class="name" data-edit="cardholder.name">미니멀 카드홀더</div>
+    <div class="links">
+      <a href="#guide">도안 구성</a>
+      <a href="#steps">제작 과정</a>
+      <a href="#tools">준비물</a>
+      <a href="#faq">FAQ</a>
+      <a href="#buy" class="buy-sm">구매하기</a>
+    </div>
+  </div>
+</div>
+
+<main class="ch">
+<section class="pd-hero">
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">패턴</a><span>›</span><a href="wallet.html">지갑</a><span>›</span>미니멀 카드홀더</div>
+    <div class="pd-grid">
+      <div class="pd-visual">
+        <div class="ch-gallery reveal">
+          <figure class="ch-shot is-on" data-img="cardholder"><img class="photo" src="assets/uploads/cardholder-1600.jpg" alt="미니멀 카드홀더 · 브라운"></figure>
+          <figure class="ch-shot" data-img="cardholder-black"><img class="photo" src="assets/uploads/gallery-cardholder-black.jpg" alt="미니멀 카드홀더 · 블랙" loading="lazy"></figure>
+          <p class="ch-badge">완성 예시</p>
+        </div>
+        <div class="ch-thumbs" aria-label="사진 고르기"></div>
+      </div>
+
+      <div class="buybox" id="buy">
+        <span class="tag reveal">첫 작품 추천 · 입문</span>
+        <h1 class="reveal d1" data-edit="cardholder.name">미니멀 카드홀더</h1>
+        <p class="sub reveal d2">도안을 그려 본 적이 없어도 괜찮습니다. 직선 스티치만으로, 주말 오후 3시간이면 선물해도 좋을 3포켓 카드홀더가 완성됩니다.</p>
+        <ul class="ch-facts reveal d2">
+          <li><p class="fx-b">약 3시간</p><p class="fx-s">제작 시간</p></li>
+          <li><p class="fx-b">직선만</p><p class="fx-s">곡선 스티치 없음</p></li>
+          <li><p class="fx-b">부품 4개</p><p class="fx-s">외피 1 · 포켓 3</p></li>
+          <li><p class="fx-b">카드 4–6장</p><p class="fx-s">수납</p></li>
+        </ul>
+        <div class="reveal d3">
+          <div class="price-now" data-price="">₩18,000<small>VAT 포함</small></div>
+          <div class="opt-title">구성 선택</div>
+          <div class="options">
+            <label class="opt">
+              <input type="radio" name="opt" value="18000" data-kind="pdf" checked="">
+              <div><div class="t">PDF 도안</div><div class="d">A4로 출력 · 결제 즉시 다운로드</div></div>
+              <div class="p">₩18,000</div>
+            </label>
+            <label class="opt">
+              <input type="radio" name="opt" value="39000" data-kind="acrylic">
+              <div><div class="t">아크릴 패턴 <span class="ch-pick">반복 제작 추천</span></div><div class="d">투명 아크릴 실물 패턴 · PDF 도안 포함 · 영업일 5일 내 발송</div></div>
+              <div class="p">₩39,000</div>
+            </label>
+          </div>
+          <div class="opt-title">그리프 간격 <span class="opt-help">가지고 계신 그리프에 맞춰 고르세요</span></div>
+          <div class="gaps">
+            <label class="gap"><input type="radio" name="gap" value="2.7"><div class="t">2.7mm</div><div class="d">촘촘하고 섬세한 마감</div></label>
+            <label class="gap"><input type="radio" name="gap" value="3.0"><div class="t">3.0mm</div><div class="d">균형 잡힌 기본 간격</div></label>
+            <label class="gap"><input type="radio" name="gap" value="3.38" checked=""><div class="t">3.38mm</div><div class="d">가장 많이 쓰는 표준</div></label>
+          </div>
+          <a href="#" class="btn btn-primary btn-block" data-buy="">₩18,000 · 지금 바로 받기</a>
+          <p class="ch-sel" data-noedit="" aria-live="polite"></p>
+          <p class="ch-value">한 번 구매하면 몇 개든 계속 만들 수 있어요.</p>
+          <ul class="includes">
+            <li><svg><use href="#check"></use></svg><span class="tx">PDF는 결제 즉시 다운로드 · 무제한 재다운로드</span></li>
+            <li><svg><use href="#check"></use></svg><span class="tx">사진으로 따라 하는 조립 가이드</span></li>
+            <li><svg><use href="#check"></use></svg><span class="tx">집 프린터(A4)로 출력 · 10mm 확인 눈금 포함</span></li>
+            <li><svg><use href="#check"></use></svg><span class="tx">파일이나 치수에 문제가 있나요? 문의 주세요.</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section reviews" id="reviews">
+  <div class="wrap">
+    <h2 class="reveal">직접 만든 분들의 후기</h2>
+    <p class="lead reveal d1">이 도안으로 실제 카드홀더를 완성한 분들의 이야기입니다.</p>
+    <div class="rv-grid">
+      <article class="rv-card reveal">
+        <div class="rv-photo" data-img="review-1"></div>
+        <div class="rv-body">
+          <p class="rv-stars">5</p>
+          <p class="rv-quote">여기에 실제 후기를 입력하세요.</p>
+          <p class="rv-who">작성자 이름 · 가죽공예 경력</p>
+          <div class="rv-tags"><p class="rv-badge">구매 확인</p><p class="rv-meta">PDF 도안 구매</p></div>
+        </div>
+      </article>
+      <article class="rv-card reveal d1">
+        <div class="rv-photo" data-img="review-2"></div>
+        <div class="rv-body">
+          <p class="rv-stars">5</p>
+          <p class="rv-quote">여기에 실제 후기를 입력하세요.</p>
+          <p class="rv-who">작성자 이름 · 가죽공예 경력</p>
+          <div class="rv-tags"><p class="rv-badge">구매 확인</p><p class="rv-meta">PDF 도안 구매</p></div>
+        </div>
+      </article>
+      <article class="rv-card reveal d2">
+        <div class="rv-photo" data-img="review-3"></div>
+        <div class="rv-body">
+          <p class="rv-stars">5</p>
+          <p class="rv-quote">여기에 실제 후기를 입력하세요.</p>
+          <p class="rv-who">작성자 이름 · 가죽공예 경력</p>
+          <div class="rv-tags"><p class="rv-badge">구매 확인</p><p class="rv-meta">PDF 도안 구매</p></div>
+        </div>
+      </article>
+      <article class="rv-card reveal">
+        <div class="rv-photo" data-img="review-4"></div>
+        <div class="rv-body">
+          <p class="rv-stars">5</p>
+          <p class="rv-quote">여기에 실제 후기를 입력하세요.</p>
+          <p class="rv-who">작성자 이름 · 가죽공예 경력</p>
+          <div class="rv-tags"><p class="rv-badge">구매 확인</p><p class="rv-meta">PDF 도안 구매</p></div>
+        </div>
+      </article>
+      <article class="rv-card reveal d1">
+        <div class="rv-photo" data-img="review-5"></div>
+        <div class="rv-body">
+          <p class="rv-stars">5</p>
+          <p class="rv-quote">여기에 실제 후기를 입력하세요.</p>
+          <p class="rv-who">작성자 이름 · 가죽공예 경력</p>
+          <div class="rv-tags"><p class="rv-badge">구매 확인</p><p class="rv-meta">PDF 도안 구매</p></div>
+        </div>
+      </article>
+      <article class="rv-card reveal d2">
+        <div class="rv-photo" data-img="review-6"></div>
+        <div class="rv-body">
+          <p class="rv-stars">5</p>
+          <p class="rv-quote">여기에 실제 후기를 입력하세요.</p>
+          <p class="rv-who">작성자 이름 · 가죽공예 경력</p>
+          <div class="rv-tags"><p class="rv-badge">구매 확인</p><p class="rv-meta">PDF 도안 구매</p></div>
+        </div>
+      </article>
+    </div>
+    <div class="rv-ask reveal">
+      <span class="rv-ask-ico"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 25.5V21L20.5 6.5a2.1 2.1 0 0 1 3 0l1.9 1.9a2.1 2.1 0 0 1 0 3L11 25.5z"/><path d="M18 9l4.9 4.9"/><path d="M15 25.5h11"/></svg></span>
+      <div class="rv-ask-txt"><p class="rv-ask-t">이 도안으로 완성하셨나요?</p><p class="rv-ask-d">완성작 사진과 함께 후기를 남겨 주시면, 확인 후 이 페이지에 소개해 드립니다.</p></div>
+      <a class="btn btn-primary rv-ask-btn" data-contact="review" href="#">후기 남기기</a>
+    </div>
+    <p class="rv-note">패턴을 무료로 제공받아 작성한 후기는 각 후기에 따로 표시합니다.</p>
+    <p class="rv-edit-hint" data-noedit="">후기 글을 채운 카드만 공개 페이지에 보입니다. 별점은 1~5 숫자로 입력하세요(4.5처럼 반 개도 됩니다). 표시는 '구매 확인' 또는 '도안 무료 제공'으로 적어 주세요. 사진은 선택이며, 후기가 3개 이상이면 평균 별점이 자동으로 표시됩니다.</p>
+  </div>
+</section>
+
+<section class="section soft">
+  <div class="wrap">
+    <h2 class="reveal">이런 분께 딱 맞아요</h2>
+    <p class="lead reveal d1">처음 만드는 사람도, 여러 개 만들어 파는 사람도 쓰기 좋게 설계했습니다.</p>
+    <div class="ch-fit">
+      <div class="ch-fit-card reveal"><div class="ch-fit-head"><span class="ch-fit-ico"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 27V15"/><path d="M16 18c-6 0-9.5-3.5-9.5-9 6 0 9.5 3.5 9.5 9z"/><path d="M16 15c0-5.5 3.5-9 9.5-9 0 5.5-3.5 9-9.5 9z"/><path d="M9.5 27h13"/></svg></span><p class="ch-fit-k">첫 작품</p></div><h3>가죽공예를 막 시작했다면</h3><p>곡선 없이 직선 스티치만으로 완성돼, 처음이어도 끝까지 만들 수 있어요.</p></div>
+      <div class="ch-fit-card reveal d1"><div class="ch-fit-head"><span class="ch-fit-ico"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5.5" y="13.5" width="21" height="13.5" rx="2"/><rect x="4" y="9" width="24" height="4.5" rx="1.5"/><path d="M16 9v18"/><path d="M16 9c-1.5-3.5-6.5-5-6.5-2.2C9.5 9 14 9 16 9zM16 9c1.5-3.5 6.5-5 6.5-2.2C22.5 9 18 9 16 9z"/></svg></span><p class="ch-fit-k">선물</p></div><h3>부담 없는 선물을 찾는다면</h3><p>얇고 단정한 3포켓 구조라 누구에게나 잘 어울립니다. 가죽 색만 바꿔도 분위기가 달라져요.</p></div>
+      <div class="ch-fit-card reveal d2"><div class="ch-fit-head"><span class="ch-fit-ico"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 4.5h8.5a2 2 0 0 1 2 2V15L15.4 27.1a2 2 0 0 1-2.8 0l-7.7-7.7a2 2 0 0 1 0-2.8z"/><circle cx="21.8" cy="10.2" r="2"/></svg></span><p class="ch-fit-k">판매</p></div><h3>여러 개 만들어 팔고 싶다면</h3><p>가죽 부품 4개, 약 3시간 구조라 반복 제작에 좋아요. 아크릴 패턴이면 반영구적 사용과 제작 시간 단축이 가능해요.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="guide">
+  <div class="wrap">
+    <h2 class="reveal">도안에 다 들어 있습니다</h2>
+    <p class="lead reveal d1">혼자 그릴 때 막히던 부분이 도안 위에 모두 표시되어 있어요. 대고, 따라 하기만 하면 됩니다.</p>
+    <div class="ch-anno">
+      <figure class="ch-sheet reveal">
+        <div class="sheet-head"><span>ATELIER LINE</span><span>미니멀 카드홀더 · A4 1/2</span></div>
+        <svg viewBox="0 0 210 230" fill="none" aria-label="A4로 출력한 카드홀더 도안">
+        <g stroke="#b9b9be" stroke-width=".5"><path d="M6 10 H14 M10 6 V14"></path><path d="M196 10 H204 M200 6 V14"></path><path d="M6 222 H14 M10 218 V226"></path><path d="M196 222 H204 M200 218 V226"></path></g>
+        <g class="dim" stroke="#8a5a34" stroke-width=".6" style="color:#8a5a34">
+          <path d="M25 26 H185" marker-start="url(#tick)" marker-end="url(#tick)"></path>
+          <text x="105" y="22" text-anchor="middle" font-size="7" fill="#8a5a34" stroke="none">220.0</text>
+        </g>
+        <rect x="25" y="34" width="160" height="57" rx="6" stroke="#1f1b17" stroke-width="1.1"></rect>
+        <rect x="29" y="38" width="152" height="49" rx="3.5" stroke="#8a5a34" stroke-width=".8" stroke-dasharray="1 2.4" stroke-linecap="round"></rect>
+        <path d="M105 30 V95" stroke="#8a5a34" stroke-width=".6" stroke-dasharray="6 2.5 1.2 2.5"></path>
+        <path d="M60 62 H90 M60 62 l4 -2.4 M60 62 l4 2.4 M90 62 l-4 -2.4 M90 62 l-4 2.4" stroke="#8b8278" stroke-width=".6"></path>
+        <text class="lbl" x="75" y="57" text-anchor="middle" font-size="5" fill="#8b8278">결 방향</text>
+        <text class="lbl" x="110" y="66" font-size="5" fill="#8a5a34">접는 선</text>
+        <text class="lbl" x="25" y="101" font-size="6" fill="#6f675f">A · 외피 ×1</text>
+        <g stroke="#1f1b17" stroke-width="1.1"><path d="M25 112 H42 A8 8 0 0 0 58 112 H75 V145 H25 Z"></path><path d="M80 112 H97 A8 8 0 0 0 113 112 H130 V145 H80 Z"></path><path d="M135 112 H152 A8 8 0 0 0 168 112 H185 V145 H135 Z"></path></g>
+        <g stroke="#8a5a34" stroke-width=".8" stroke-dasharray="1 2.4" stroke-linecap="round"><path d="M29 116 V141 H71 V116"></path><path d="M84 116 V141 H126 V116"></path><path d="M139 116 V141 H181 V116"></path></g>
+        <text class="lbl" x="25" y="155" font-size="6" fill="#6f675f">B · 포켓 ×3</text>
+        <rect x="25" y="170" width="36" height="36" stroke="#1f1b17" stroke-width=".8"></rect>
+        <text class="lbl" x="43" y="190" text-anchor="middle" font-size="6" fill="#1f1b17">10mm</text>
+        <text class="lbl" x="68" y="181" font-size="5.2" fill="#6f675f">출력 후 이 칸이 10mm면</text>
+        <text class="lbl" x="68" y="189" font-size="5.2" fill="#6f675f">크기가 정확합니다</text>
+        <text class="lbl" x="185" y="206" text-anchor="end" font-size="5" fill="#8b8278">SCALE 1:1 · mm</text>
+      <g class="mk"><circle cx="185" cy="40" r="6.2" fill="#8a5a34"></circle><text x="185" y="42.4" text-anchor="middle" font-size="7" font-weight="700" fill="#fff">1</text></g><g class="mk"><circle cx="156" cy="87" r="6.2" fill="#8a5a34"></circle><text x="156" y="89.4" text-anchor="middle" font-size="7" font-weight="700" fill="#fff">2</text></g><g class="mk"><circle cx="105" cy="30" r="6.2" fill="#8a5a34"></circle><text x="105" y="32.4" text-anchor="middle" font-size="7" font-weight="700" fill="#fff">3</text></g><g class="mk"><circle cx="75" cy="50" r="6.2" fill="#8a5a34"></circle><text x="75" y="52.4" text-anchor="middle" font-size="7" font-weight="700" fill="#fff">4</text></g><g class="mk"><circle cx="50" cy="124" r="6.2" fill="#8a5a34"></circle><text x="50" y="126.4" text-anchor="middle" font-size="7" font-weight="700" fill="#fff">5</text></g><g class="mk"><circle cx="61" cy="170" r="6.2" fill="#8a5a34"></circle><text x="61" y="172.4" text-anchor="middle" font-size="7" font-weight="700" fill="#fff">6</text></g></svg>
+      </figure>
+      <ol class="ch-points">
+        <li class="reveal"><h3>재단선</h3><p>굵은 실선을 따라 자르면 됩니다. 두께 여유까지 반영된 치수예요.</p></li>
+        <li class="reveal d1"><h3>그리프 위치</h3><p>점선이 그리프를 대는 자리입니다. 맞물리는 면의 구멍 수가 맞춰져 있어 끝에서 어긋나지 않아요.</p></li>
+        <li class="reveal d2"><h3>접는 선</h3><p>가운데 선을 기준으로 접으면 양쪽 포켓 높이가 정확히 맞습니다.</p></li>
+        <li class="reveal"><h3>결 방향</h3><p>화살표 방향으로 가죽 결을 맞추면 쓰면서 늘어나지 않아요.</p></li>
+        <li class="reveal d1"><h3>엄지 홈</h3><p>카드를 꺼내기 쉬운 반원 홈까지 도안에 들어 있습니다.</p></li>
+        <li class="reveal d2"><h3>10mm 확인 눈금</h3><p>출력 후 이 칸을 자로 재 보세요. 10mm면 크기가 정확합니다.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section class="section soft" id="steps">
+  <div class="wrap">
+    <h2 class="reveal">주말 오후 3시간, 4단계면 끝</h2>
+    <p class="lead reveal d1">조립 가이드에 단계마다 사진과 함께 설명되어 있습니다.</p>
+    <div class="steps">
+      <div class="step reveal"><h3>출력 · 재단</h3><p>A4에 100% 배율로 출력해 가죽에 대고 재단합니다. 아크릴 패턴이면 바로 대고 자르면 됩니다.</p></div>
+      <div class="step reveal d1"><h3>그리프 구멍</h3><p>점선 위치에 선택한 간격의 그리프(치즐)로 구멍을 냅니다.</p></div>
+      <div class="step reveal d2"><h3>포켓 접합</h3><p>포켓 B를 외피 A 양쪽에 맞추고 새들 스티치로 바느질합니다.</p></div>
+      <div class="step reveal d3"><h3>엣지 마감</h3><p>단면을 다듬고 엣지 마감제를 발라 문질러 매끈하게 마감합니다.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="tools">
+  <div class="wrap">
+    <h2 class="reveal">준비물 체크리스트</h2>
+    <p class="lead reveal d1">특별한 장비는 필요 없어요. 기본 공구가 있다면 바로 시작할 수 있습니다.</p>
+    <div class="ch-tools reveal">
+      <div class="ch-tool-col">
+        <p class="ch-tool-h">재료</p>
+        <ul>
+          <li><span class="tx">베지터블 가죽 1.0–1.2mm (A4 한 장 이내)</span></li>
+          <li><span class="tx">왁스 실 0.45–0.55mm</span></li>
+          <li><span class="tx">가죽용 본드</span></li>
+        </ul>
+      </div>
+      <div class="ch-tool-col">
+        <p class="ch-tool-h">공구</p>
+        <ul>
+          <li><span class="tx">그리프(치즐) 2발 · 4발 (선택한 간격)</span></li>
+          <li><span class="tx">재단칼 · 커팅 매트 · 철자</span></li>
+          <li><span class="tx">바늘 2개 · 망치(고무망치)</span></li>
+          <li><span class="tx">엣지 비벨러 · 사포 · 엣지 마감제</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section soft" id="specs">
+  <div class="wrap">
+    <h2 class="reveal">사양</h2>
+    <div class="spec-grid reveal">
+      <div class="spec"><div class="k">완성 크기</div><div class="v">110 × 78<small>mm</small></div></div>
+      <div class="spec"><div class="k">완성 두께</div><div class="v">약 3~5<small>mm</small></div></div>
+      <div class="spec"><div class="k">부품</div><div class="v">A 외피 1 · B 포켓 3</div></div>
+      <div class="spec"><div class="k">권장 가죽 두께</div><div class="v">1.0–1.2<small>mm</small></div></div>
+      <div class="spec"><div class="k">스티치 간격</div><div class="v">2.7 · 3.0 · 3.38<small>mm 중 선택</small></div></div>
+      <div class="spec"><div class="k">난이도 · 제작 시간</div><div class="v"><span class="dots"><i class="on"></i><i></i><i></i></span> <small>약 3시간</small></div></div>
+    </div>
+    <div class="ch-pack reveal">
+      <div class="ch-pack-col">
+        <p class="ch-pack-h">PDF 도안</p>
+        <ul>
+          <li><span class="tx">A4 출력용 도안 2쪽 (외피 A · 포켓 B)</span></li>
+          <li><span class="tx">조립 가이드&nbsp;</span></li>
+        </ul>
+      </div>
+      <div class="ch-pack-col">
+        <p class="ch-pack-h">아크릴 패턴</p>
+        <ul>
+          <li><span class="tx">투명 아크릴 패턴 (외피 A · 포켓 B)</span></li>
+          <li><span class="tx">PDF 도안 · 조립 가이드 포함</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="wrap">
+    <h2 class="reveal">구매 전에 많이 물어보세요</h2>
+    <div class="faq reveal">
+      <details open=""><summary>가죽공예가 처음인데 끝까지 만들 수 있을까요?</summary><p class="a">곡선 없이 직선 스티치만으로 완성되는 구조라 첫 작품으로 가장 많이 권하는 패턴입니다. 재단선, 그리프 위치, 접는 선이 모두 표시되어 있고, 사진 조립 가이드를 순서대로 따라 하면 됩니다.</p></details>
+      <details><summary>어떤 그리프 간격을 골라야 하나요?</summary><p class="a">가지고 계신 그리프(치즐)와 같은 간격을 고르세요. 그리프 날 끝 사이의 간격이 2.7mm · 3.0mm · 3.38mm 중 무엇인지 확인하면 됩니다. 간격이 다르면 맞물리는 면의 구멍 수가 달라지니, 꼭 같은 간격의 도안을 쓰세요. 처음이라 그리프가 없다면 가장 많이 쓰는 3.38mm를 권합니다.</p></details>
+      <details><summary>PDF와 아크릴 패턴은 무엇이 다른가요?</summary><p class="a">PDF는 결제 즉시 받아 집에서 출력해 쓰는 도안입니다. 아크릴 패턴은 투명하고 단단한 실물 패턴이라 종이처럼 닳지 않고, 가죽 위에 바로 대고 여러 번 마킹할 수 있어 반복 제작과 판매용 제작에 좋습니다. 아크릴 패턴에도 PDF 도안이 함께 제공됩니다.</p></details>
+      <details><summary>아크릴 패턴은 언제 받을 수 있나요?</summary><p class="a">주문 후 영업일 기준 5일 안에 발송합니다. 5만 원 이상 구매하시면 배송비는 무료예요. 함께 드리는 PDF 도안은 결제 즉시 받을 수 있어, 아크릴 패턴이 도착하기 전에도 바로 시작할 수 있습니다.</p></details>
+      <details><summary>출력했더니 크기가 맞지 않아요.</summary><p class="a">인쇄 설정에서 ‘실제 크기’ 또는 배율 100%를 선택해 주세요. 도안의 10mm 확인 눈금을 자로 재서 크기를 확인할 수 있습니다.</p></details>
+      <details><summary>만든 제품을 판매해도 되나요?</summary><p class="a">네. 개인 및 소규모 상업 제작(공방, 플리마켓, 온라인 판매 등)에 사용할 수 있습니다. 패턴 자체의 재배포나 재판매만 금지됩니다.</p></details>
+      <details><summary>파일에 문제가 있으면요? 환불은 되나요?</summary><p class="a">파일이 열리지 않거나 치수에 문제가 있다면 문의해 주세요. 끝까지 확인해 해결해 드립니다. 다만 PDF는 디지털 파일 특성상 다운로드 후 단순 변심 환불은 어렵습니다.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="ch-final">
+  <div class="wrap">
+    <h2 class="reveal">이번 주말, 첫 카드홀더를 완성해 보세요.</h2>
+    <p class="reveal d1">PDF는 결제 즉시 받아 오늘 바로 재단을 시작할 수 있습니다.</p>
+    <div class="reveal d2"><a href="#buy" class="btn ch-final-btn">구성 고르고 시작하기</a></div>
+  </div>
+</section>
+
+<section class="section soft">
+  <div class="wrap">
+    <h2 class="reveal" style="margin-bottom:32px">같은 카테고리의 지갑</h2>
+    <div class="related">
+      <a class="rel reveal" href="long-wallet.html">
+        <div class="visual v3" data-img="long-wallet"><svg viewBox="0 0 300 170" fill="none"><rect x="30" y="35" width="240" height="100" rx="6" stroke="#fff" stroke-width="1.3"></rect><g stroke="#fff" stroke-opacity=".55" stroke-width=".7" stroke-dasharray="5 2 1 2"><path d="M110 28 V142"></path><path d="M190 28 V142"></path></g></svg><img class="photo" src="assets/uploads/bifold-wallet-1600.jpg" alt="클래식 반지갑"></div>
+        <div class="body"><div class="e" data-edit="long-wallet.category">지갑</div><div class="t" data-edit="long-wallet.name">클래식 반지갑</div><div class="pr" data-edit="long-wallet.from">₩35,000부터</div></div>
+      </a>
+      <a class="rel reveal d1" href="flap-wallet.html">
+        <div class="visual v1" data-img="flap-wallet"><svg viewBox="0 0 300 170" fill="none"><g stroke="#fff" stroke-width="1.3"><path d="M70 30 H230 V125 Q230 148 207 148 H93 Q70 148 70 125 Z"></path><path d="M70 30 V62 Q70 92 100 92 H200 Q230 92 230 62 V30"></path></g></svg><img class="photo" src="assets/uploads/flap-wallet-1600.jpg" alt="커버 지갑"></div>
+        <div class="body"><div class="e" data-edit="flap-wallet.category">지갑</div><div class="t" data-edit="flap-wallet.name">커버 지갑</div><div class="pr" data-edit="flap-wallet.from">₩28,000부터</div></div>
+      </a>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="ch-bar" data-noedit="" aria-hidden="true">
+  <div class="ch-bar-in">
+    <div class="ch-bar-t"><span class="ch-bar-n">미니멀 카드홀더</span><span class="ch-bar-p">₩18,000</span></div>
+    <a href="#" class="btn btn-primary ch-bar-btn" data-buy="" tabindex="-1">지금 바로 받기</a>
+  </div>
+</div>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="fnote">패턴 파일은 개인 및 소규모 상업적 제작 용도로 사용할 수 있습니다. 재배포는 금지됩니다.</div>
+    <div class="fcols">
+      <div class="fcol"><h4>지갑</h4><a href="wallet.html">지갑 전체</a><a href="cardholder.html">미니멀 카드홀더</a><a href="long-wallet.html">클래식 반지갑</a><a href="flap-wallet.html">커버 지갑</a></div>
+      <div class="fcol"><h4>스트랩</h4><a href="strap.html">스트랩 전체</a><a href="shoulder-bag.html">워치 스트랩</a><a href="double-strap.html">더블 투어 스트랩</a><a href="belt.html">클래식 가죽 벨트</a></div>
+      <div class="fcol"><h4>커버</h4><a href="cover.html">커버 전체</a><a href="passport.html">여권 케이스</a><a href="notebook.html">노트 케이스</a></div>
+      <div class="fcol"><h4>읽을거리</h4><a href="blog/">블로그</a></div>
+      <div class="fcol"><h4>고객지원</h4><a href="#">파일 사용 안내</a><a href="#">환불 정책</a><a href="#" data-contact="inquiry">문의하기</a></div>
+      <div class="fcol"><h4>Atelier Line</h4><a href="#">소개</a><a href="#" data-contact="instagram">인스타그램</a></div>
+    </div>
+    <div class="fbottom"><span>© 2026 Atelier Line.</span><span>대한민국</span></div>
+  </div>
+</footer>
+
+<div class="toast" role="status" aria-live="polite"></div>
+<script src="assets/detail.js"></script>
+<script src="assets/product.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+<script src="assets/contact.js"></script>
+</body></html>
