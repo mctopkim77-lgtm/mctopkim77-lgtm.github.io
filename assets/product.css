@@ -165,5 +165,5 @@
 .ch-shot > .photo{z-index:1;}
 .ch-shot:has(> .photo) > .ch-illus{display:none;}
 
-/* headings: Noto Serif KR for a crafted, premium feel; body text stays in the system sans */
+/* headings: Malgun Gothic; body text stays in the system sans */
 body :is(h1,h2,.big){font-family:var(--display); letter-spacing:-.03em;}
