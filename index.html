@@ -36,6 +36,7 @@ h1,h2,h3{text-wrap:balance;}
 p{text-wrap:pretty;}
 .hero .sub{text-wrap:balance;}
 .hero .sub .ln{display:block; text-wrap:balance;}
+.hero .sub .ch{display:inline-block;}
 nav{
   position:sticky; top:0; z-index:50;
   padding-top:env(safe-area-inset-top,0px);
@@ -367,7 +368,7 @@ body :is(h1,h2,.big){font-family:var(--display); letter-spacing:-.03em;}
 <!-- ===== Hero ===== -->
 <header class="hero" id="top">
   <h1 class="reveal d1">패턴은 저희가,<br><em>당신은 만들기만.</em></h1>
-  <p class="sub reveal d2"><span class="ln">치수 계산도, 시행착오도, 버리는 가죽도 없이.</span><span class="ln">출력해서 가죽에 대고 자르기만 하면, 스티치 간격까지 딱 맞습니다.</span><span class="ln">여러분은 만드는 즐거움만 누리세요.</span></p>
+  <p class="sub reveal d2"><span class="ln">치수 계산도, 시행착오도, 버리는 가죽도 없이.</span><span class="ln"><span class="ch">출력해서 가죽에 대고 자르기만 하면,</span> <span class="ch">스티치 간격까지 딱 맞습니다.</span></span><span class="ln">여러분은 만드는 즐거움만 누리세요.</span></p>
   <div class="actions reveal d3">
     <a class="btn btn-primary" href="#wallet">내게 맞는 패턴 고르기</a>
     <a class="btn btn-link" href="#how">어떻게 쓰나요</a>
